@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Task;
 
 import java.util.Map;
 
-import static com.prueba.certificacion.api.utils.templates.HandlebarsTemplate.mergeWithTemplates;
+import static com.prueba.certificacion.api.utils.HandlebarsTemplate.mergeWithTemplates;
 
 
 public class GenerateToken implements Task, IsHidden {
@@ -23,13 +23,13 @@ public class GenerateToken implements Task, IsHidden {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        clientData.put("username", "Admin");
-        clientData.put("password", "admin123");
+        clientData.put("username", System.getProperty("username"));
+        clientData.put("password", System.getProperty("password"));
 
         String body = mergeWithTemplates(template, bodyName, clientData);
 
         System.setProperty("access_token",
-                "def5020021ef4fc9c8f96e153faa24d19ed3173142271aaa4ee789d36ba34d6145adb8c0b3a6db8913b6a81708c487ef5f767b68f0a9f7b97a07cdb9c5f27051fff27387be18d041e5f7b2a8ccb6f00ee156052ad5c308ad2ac25e47ce5f13bc11c31df58e86ccd7181e871dc558a806faebdba65888783b5127c9ef5c7093147204834b2194007abf34f4a9252f47ea37698a9a1c794b444bd12d3d6d7083af87c955c6"
+                "def5020097d544742a22d3219094545082085d1ac86b7355d5332ace5c40bb2812d980e9e2e79ce6b54643f227c65d9f43cf515f3df6fa134bfe9f462e85733f192ede8d1d9069f5bb72ab3fe89e13867c7103a5aef10ccdc66663bb7bb91b18100aebd0123822f5cd02c0b61ec9dee0c786821eef7ceba3d7968b2d2a7ff2780e996c107f509738db51aeb56389cfdc4153a771d8ea7c6e236d49e9c8a930941cc16a85"
         );
     }
 

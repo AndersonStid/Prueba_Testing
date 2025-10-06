@@ -15,10 +15,11 @@ public class GetProvidersStepsDefintions {
 
     @When("Load templates")
     public void callGenerateOTPMicroservice() {
-        System.out.println("https://opensource-demo.orangehrmlive.com/web/index.php");
-        OnStage.theActorCalled("https://opensource-demo.orangehrmlive.com/web/index.php").whoCan(CallAnApi.at("https://opensource-demo.orangehrmlive.com/web/index.php"));
+        System.out.println(System.getProperty("base_url"));
+        OnStage.theActorCalled("base_url").whoCan(CallAnApi.at(System.getProperty("base_url")));
         theActorInTheSpotlight().attemptsTo(RequestApi.get(TestData.getTestDataModel()));
     }
+
     @Then("Validate Json")
     public void validateJsonExit() {
         ValidateJson.validate(theActorInTheSpotlight(), TemplatesConstants.RESPONSE_JSON_EXIT.getTemplatePaths());

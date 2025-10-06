@@ -23,7 +23,7 @@ public class RequestApi implements Task {
         String authorizationFromTestData = TestData.getTestDataModel().get("Authorization");
         userData.remove("Authorization");
         actor.attemptsTo(
-                Get.resource("/api/v2/pim/employees").with(requestSpecification -> {
+                Get.resource(System.getProperty("url")).with(requestSpecification -> {
                     requestSpecification.contentType(JSON)
                             .relaxedHTTPSValidation();
                     if (authorizationFromTestData != null && !authorizationFromTestData.trim().isEmpty()) {

@@ -1,4 +1,4 @@
-package com.prueba.certificacion.api.utils.templates;
+package com.prueba.certificacion.api.utils;
 
 import com.prueba.certificacion.api.exceptions.AssertionErrors;
 import com.github.jknack.handlebars.Handlebars;

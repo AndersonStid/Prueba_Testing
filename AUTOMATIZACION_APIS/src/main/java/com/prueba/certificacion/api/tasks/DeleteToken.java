@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.rest.interactions.Post;
 
 import java.util.Map;
 
-import static com.prueba.certificacion.api.utils.templates.HandlebarsTemplate.mergeWithTemplates;
+import static com.prueba.certificacion.api.utils.HandlebarsTemplate.mergeWithTemplates;
 import static io.restassured.http.ContentType.JSON;
 
 public class DeleteToken implements Task, IsHidden {

@@ -19,8 +19,8 @@ public class TokenStepDefinitions {
 
     @When("Generate Token")
     public void generateToken() {
-        System.out.println("https://opensource-demo.orangehrmlive.com");
-        OnStage.theActorCalled("https://opensource-demo.orangehrmlive.com").whoCan(CallAnApi.at("https://opensource-demo.orangehrmlive.com"));
+        System.out.println(System.getProperty("url_token"));
+        OnStage.theActorCalled("url_token").whoCan(CallAnApi.at(System.getProperty("url_token")));
         theActorInTheSpotlight().attemptsTo(GenerateToken.post(TOKEN_JSON.getTemplatePaths(), PATH_TEMPLATES.getTemplatePaths(),
                 TestData.getTestDataModel()));
     }
