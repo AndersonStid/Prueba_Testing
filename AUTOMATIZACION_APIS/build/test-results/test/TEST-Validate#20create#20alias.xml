@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Validate create alias" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-10-06T03:59:03" hostname="ANDERSON" time="7.346">
+<testsuite name="Validate create alias" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-10-06T04:44:59" hostname="ANDERSON" time="7.306">
   <properties/>
-  <testcase name="Validate employees" classname="Validate create alias" time="3.505"/>
-  <testcase name="Validate employee error without limit field" classname="Validate create alias" time="0.654"/>
-  <testcase name="Validate employee error without offset field" classname="Validate create alias" time="0.627"/>
-  <testcase name="Validate employee error without model field" classname="Validate create alias" time="0.616"/>
-  <testcase name="Validate employee error without includeEmployees field" classname="Validate create alias" time="0.624"/>
-  <testcase name="Validate employee error without sortField field" classname="Validate create alias" time="0.69"/>
-  <testcase name="Validate employee error without sortOrder field" classname="Validate create alias" time="0.629"/>
+  <testcase name="Validate employees" classname="Validate create alias" time="3.42"/>
+  <testcase name="Validate employee error without limit field" classname="Validate create alias" time="0.701"/>
+  <testcase name="Validate employee error without offset field" classname="Validate create alias" time="0.688"/>
+  <testcase name="Validate employee error without model field" classname="Validate create alias" time="0.627"/>
+  <testcase name="Validate employee error without includeEmployees field" classname="Validate create alias" time="0.638"/>
+  <testcase name="Validate employee error without sortField field" classname="Validate create alias" time="0.615"/>
+  <testcase name="Validate employee error without sortOrder field" classname="Validate create alias" time="0.617"/>
   <system-out><![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php
-]]>&#x1f50d;<![CDATA[ Validando campo: data | Esperado: [{empNumber=86, lastName=5TlV, firstName=99N75, middleName=425, employeeId=0295, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=104, lastName=010Z, firstName=A8DCo, middleName=4Ys, employeeId=0312, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=7, lastName=Doe, firstName=Akhila, middleName=devi, employeeId=56788, terminationId=null, jobTitle={id=23, title=HR Manager, isDeleted=false}, subunit={id=13, name=Human Resources}, empStatus={id=3, name=Full-Time Permanent}, supervisors=[]}, {empNumber=116, lastName=Brown, firstName=Amelia, middleName=, employeeId=01715, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}] (ArrayList) | Actual: [{empNumber=86, lastName=5TlV, firstName=99N75, middleName=425, employeeId=0295, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=104, lastName=010Z, firstName=A8DCo, middleName=4Ys, employeeId=0312, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=7, lastName=Doe, firstName=Akhilab, middleName=devi, employeeId=56788, terminationId=null, jobTitle={id=23, title=HR Manager, isDeleted=false}, subunit={id=13, name=Human Resources}, empStatus={id=3, name=Full-Time Permanent}, supervisors=[]}, {empNumber=240, lastName=Flatley, firstName=Alfonzo, middleName=Rowan, employeeId=041859, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}] (ArrayList)
+]]>&#x1f50d;<![CDATA[ Validando campo: data | Esperado: [{empNumber=128, lastName=444444, firstName=123445, middleName=34, employeeId=dfgsjsjdh, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=86, lastName=5TlV, firstName=99N75, middleName=425, employeeId=0295, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=104, lastName=010Z, firstName=A8DCo, middleName=4Ys, employeeId=0312, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=7, lastName=John, firstName=Akhil, middleName=dev, employeeId=56788, terminationId=null, jobTitle={id=23, title=HR Manager, isDeleted=false}, subunit={id=13, name=Human Resources}, empStatus={id=3, name=Full-Time Permanent}, supervisors=[]}] (ArrayList) | Actual: [{empNumber=128, lastName=444444, firstName=123445, middleName=34, employeeId=dfgsjsjdh, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=86, lastName=5TlV, firstName=99N75, middleName=425, employeeId=0295, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=104, lastName=010Z, firstName=A8DCo, middleName=4Ys, employeeId=0312, terminationId=null, jobTitle={id=null, title=null, isDeleted=null}, subunit={id=null, name=null}, empStatus={id=null, name=null}, supervisors=[]}, {empNumber=7, lastName=John, firstName=Akhil, middleName=dev, employeeId=56788, terminationId=null, jobTitle={id=23, title=HR Manager, isDeleted=false}, subunit={id=13, name=Human Resources}, empStatus={id=3, name=Full-Time Permanent}, supervisors=[]}] (ArrayList)
+]]>&#x1f50d;<![CDATA[ Validando campo: empNumber | Esperado: 128 (Integer) | Actual: 128 (Integer)
+]]>&#x1f50d;<![CDATA[ Validando campo: lastName | Esperado: 444444 (String) | Actual: 444444 (String)
+]]>&#x1f50d;<![CDATA[ Validando campo: firstName | Esperado: 123445 (String) | Actual: 123445 (String)
+]]>&#x1f50d;<![CDATA[ Validando campo: middleName | Esperado: 34 (String) | Actual: 34 (String)
+]]>&#x1f50d;<![CDATA[ Validando campo: employeeId | Esperado: dfgsjsjdh (String) | Actual: dfgsjsjdh (String)
+⚠️ Campo faltante en respuesta: terminationId
+]]>&#x1f50d;<![CDATA[ Validando campo: jobTitle | Esperado: {id=null, title=null, isDeleted=null} (LinkedHashMap) | Actual: {id=null, title=null, isDeleted=null} (LinkedHashMap)
+]]>&#x1f7e1;<![CDATA[ Campo ignorado: id
+⚠️ Campo faltante en respuesta: title
+⚠️ Campo faltante en respuesta: isDeleted
+]]>&#x1f50d;<![CDATA[ Validando campo: subunit | Esperado: {id=null, name=null} (LinkedHashMap) | Actual: {id=null, name=null} (LinkedHashMap)
+]]>&#x1f7e1;<![CDATA[ Campo ignorado: id
+⚠️ Campo faltante en respuesta: name
+]]>&#x1f50d;<![CDATA[ Validando campo: empStatus | Esperado: {id=null, name=null} (LinkedHashMap) | Actual: {id=null, name=null} (LinkedHashMap)
+]]>&#x1f7e1;<![CDATA[ Campo ignorado: id
+⚠️ Campo faltante en respuesta: name
+]]>&#x1f50d;<![CDATA[ Validando campo: supervisors | Esperado: [] (ArrayList) | Actual: [] (ArrayList)
 ]]>&#x1f50d;<![CDATA[ Validando campo: empNumber | Esperado: 86 (Integer) | Actual: 86 (Integer)
 ]]>&#x1f50d;<![CDATA[ Validando campo: lastName | Esperado: 5TlV (String) | Actual: 5TlV (String)
 ]]>&#x1f50d;<![CDATA[ Validando campo: firstName | Esperado: 99N75 (String) | Actual: 99N75 (String)
@@ -45,9 +62,9 @@
 ⚠️ Campo faltante en respuesta: name
 ]]>&#x1f50d;<![CDATA[ Validando campo: supervisors | Esperado: [] (ArrayList) | Actual: [] (ArrayList)
 ]]>&#x1f50d;<![CDATA[ Validando campo: empNumber | Esperado: 7 (Integer) | Actual: 7 (Integer)
-]]>&#x1f50d;<![CDATA[ Validando campo: lastName | Esperado: Doe (String) | Actual: Doe (String)
-]]>&#x1f50d;<![CDATA[ Validando campo: firstName | Esperado: Akhila (String) | Actual: Akhilab (String)
-]]>&#x1f50d;<![CDATA[ Validando campo: middleName | Esperado: devi (String) | Actual: devi (String)
+]]>&#x1f50d;<![CDATA[ Validando campo: lastName | Esperado: John (String) | Actual: John (String)
+]]>&#x1f50d;<![CDATA[ Validando campo: firstName | Esperado: Akhil (String) | Actual: Akhil (String)
+]]>&#x1f50d;<![CDATA[ Validando campo: middleName | Esperado: dev (String) | Actual: dev (String)
 ]]>&#x1f50d;<![CDATA[ Validando campo: employeeId | Esperado: 56788 (String) | Actual: 56788 (String)
 ⚠️ Campo faltante en respuesta: terminationId
 ]]>&#x1f50d;<![CDATA[ Validando campo: jobTitle | Esperado: {id=23, title=HR Manager, isDeleted=false} (LinkedHashMap) | Actual: {id=23, title=HR Manager, isDeleted=false} (LinkedHashMap)
@@ -61,25 +78,8 @@
 ]]>&#x1f7e1;<![CDATA[ Campo ignorado: id
 ]]>&#x1f50d;<![CDATA[ Validando campo: name | Esperado: Full-Time Permanent (String) | Actual: Full-Time Permanent (String)
 ]]>&#x1f50d;<![CDATA[ Validando campo: supervisors | Esperado: [] (ArrayList) | Actual: [] (ArrayList)
-]]>&#x1f50d;<![CDATA[ Validando campo: empNumber | Esperado: 116 (Integer) | Actual: 240 (Integer)
-]]>&#x1f50d;<![CDATA[ Validando campo: lastName | Esperado: Brown (String) | Actual: Flatley (String)
-]]>&#x1f50d;<![CDATA[ Validando campo: firstName | Esperado: Amelia (String) | Actual: Alfonzo (String)
-]]>&#x1f50d;<![CDATA[ Validando campo: middleName | Esperado:  (String) | Actual: Rowan (String)
-]]>&#x1f50d;<![CDATA[ Validando campo: employeeId | Esperado: 01715 (String) | Actual: 041859 (String)
-⚠️ Campo faltante en respuesta: terminationId
-]]>&#x1f50d;<![CDATA[ Validando campo: jobTitle | Esperado: {id=null, title=null, isDeleted=null} (LinkedHashMap) | Actual: {id=null, title=null, isDeleted=null} (LinkedHashMap)
-]]>&#x1f7e1;<![CDATA[ Campo ignorado: id
-⚠️ Campo faltante en respuesta: title
-⚠️ Campo faltante en respuesta: isDeleted
-]]>&#x1f50d;<![CDATA[ Validando campo: subunit | Esperado: {id=null, name=null} (LinkedHashMap) | Actual: {id=null, name=null} (LinkedHashMap)
-]]>&#x1f7e1;<![CDATA[ Campo ignorado: id
-⚠️ Campo faltante en respuesta: name
-]]>&#x1f50d;<![CDATA[ Validando campo: empStatus | Esperado: {id=null, name=null} (LinkedHashMap) | Actual: {id=null, name=null} (LinkedHashMap)
-]]>&#x1f7e1;<![CDATA[ Campo ignorado: id
-⚠️ Campo faltante en respuesta: name
-]]>&#x1f50d;<![CDATA[ Validando campo: supervisors | Esperado: [] (ArrayList) | Actual: [] (ArrayList)
-]]>&#x1f50d;<![CDATA[ Validando campo: meta | Esperado: {total=148} (LinkedHashMap) | Actual: {total=162} (LinkedHashMap)
-]]>&#x1f50d;<![CDATA[ Validando campo: total | Esperado: 148 (Integer) | Actual: 162 (Integer)
+]]>&#x1f50d;<![CDATA[ Validando campo: meta | Esperado: {total=135} (LinkedHashMap) | Actual: {total=139} (LinkedHashMap)
+]]>&#x1f50d;<![CDATA[ Validando campo: total | Esperado: 135 (Integer) | Actual: 139 (Integer)
 ]]>&#x1f50d;<![CDATA[ Validando campo: rels | Esperado: [] (ArrayList) | Actual: [] (ArrayList)
 https://opensource-demo.orangehrmlive.com/web/index.php
 ]]>&#x1f50d;<![CDATA[ Validando campo: error | Esperado: {status=422, message=Invalid Parameter, data={invalidParamKeys=[limitd]}} (LinkedHashMap) | Actual: {status=422, message=Invalid Parameter, data={invalidParamKeys=[limitd]}} (LinkedHashMap)

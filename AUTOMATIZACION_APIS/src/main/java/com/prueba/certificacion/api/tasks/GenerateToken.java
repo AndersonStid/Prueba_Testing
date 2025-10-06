@@ -29,13 +29,11 @@ public class GenerateToken implements Task, IsHidden {
         String body = mergeWithTemplates(template, bodyName, clientData);
 
         System.setProperty("access_token",
-                "def5020097d544742a22d3219094545082085d1ac86b7355d5332ace5c40bb2812d980e9e2e79ce6b54643f227c65d9f43cf515f3df6fa134bfe9f462e85733f192ede8d1d9069f5bb72ab3fe89e13867c7103a5aef10ccdc66663bb7bb91b18100aebd0123822f5cd02c0b61ec9dee0c786821eef7ceba3d7968b2d2a7ff2780e996c107f509738db51aeb56389cfdc4153a771d8ea7c6e236d49e9c8a930941cc16a85"
+                "def50200ba210c22d93a54b638d34a9ff6120aeb4cef7b7bafd11a01ea78c29a4cc5ac1babbc132d87e5cede224fcade2bbe0ba0bf454a970d16f4df35f5ab92672e6220601dbc7e3ed31cb6ea899ba45d07d02e31abe833cdecb7b0d6f8924b6a37abc631f1f7fc811dae9540a86924a3cca19595906ab36087f3e97a7a21b482552e5832b7e8f9dbdfa36bb6fda5d74d30e52928e2723cd837fceb60024f53c33b1391"
         );
     }
-
     public static GenerateToken post(String template, String bodyName, Map<String, String> clientData) {
         return new GenerateToken(template, bodyName, clientData);
     }
-
 }
 

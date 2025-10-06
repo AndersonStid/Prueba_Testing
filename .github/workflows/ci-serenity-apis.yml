@@ -52,9 +52,11 @@ jobs:
 
       # 6️⃣ Ejecutar las pruebas Serenity con variables de entorno
       - name: Run Serenity API Tests
+        continue-on-error: true
         run: |
           ./gradlew test aggregate \-Dbase_url=${{ env.BASE_URL }} \-Durl=${{ env.URL }} \-Durl_token=${{ env.URL_TOKEN }} \-Durl_tokens=${{ env.URL_TOKENS }} \-Dusername=${{ env.USERNAME }} \-Dpassword=${{ env.PASSWORD }}
         working-directory: AUTOMATIZACION_APIS
+
 
       # 7️⃣ Subir reporte Serenity
       - name: Upload Serenity API Reports

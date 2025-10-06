@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Validate employee error without model field</title>
+    <title>Validate employee error without limit field</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -121,9 +121,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
- <!-- inflection.of(breadcrumb.displayName).asATitle()-->
-            > <a href="#">Validate create alias</a>
-        > Validate employee error without model field
+        > Validate employee error without limit field
         </span>
         </div>
         <div class="rightbg"></div>
@@ -144,7 +142,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 05-10-2025 22:59</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 05-10-2025 23:45</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -158,10 +156,9 @@
                         <td>
                                 <div>
                                     <h3 class="discreet-story-header">
-                                        <i class="fs-2 bi bi-chat-left-quote title-icon"></i>
-                                        <span class="story-header-title">Validate Create Alias </span>
+                                        <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                        <span class="story-header-title">Validate Create Alias</span>
                                     </h3>
-
                                 </div>
 
                         </td>
@@ -187,7 +184,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    Validate employee error without model field
+                                    Validate employee error without limit field
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -303,7 +300,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                When Load customer information<br><table class='embedded'><thead><th>Authorization</th><th>limit</th><th>offset</th><th>models</th><th>includeEmployees</th><th>sortField</th><th>sortOrder</th></thead><tbody><tr><td>Authorization</td><td>50</td><td>0</td><td>detailed</td><td>onlyCurrent</td><td>employee.firstName</td><td>ASC</td></tr></tbody></table>
+                                                When Load customer information<br><table class='embedded'><thead><th>Authorization</th><th>limitd</th><th>offset</th><th>model</th><th>includeEmployees</th><th>sortField</th><th>sortOrder</th></thead><tbody><tr><td>Authorization</td><td>50</td><td>0</td><td>detailed</td><td>onlyCurrent</td><td>employee.firstName</td><td>ASC</td></tr></tbody></table>
                                         </span>
                             </a>
                             <span class="evidence">
@@ -312,7 +309,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">009ms</span></td>
+                    <td width="100"><span class="top-level-step">021ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -337,7 +334,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                    <td width="100"><span class="nested-group-step">003ms</span></td>
                 </tr>
 
                             </table>
@@ -368,7 +365,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">544ms</span></td>
+                    <td width="100"><span class="top-level-step">609ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -398,7 +395,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">530ms</span></td>
+                    <td width="100"><span class="nested-step">593ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -415,7 +412,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                GET https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees?models=detailed&amp;offset=0&amp;sortOrder=ASC&amp;limit=50&amp;sortField=employee.firstName&amp;includeEmployees=onlyCurrent
+                                                GET https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees?offset=0&amp;sortOrder=ASC&amp;sortField=employee.firstName&amp;model=detailed&amp;includeEmployees=onlyCurrent&amp;limitd=50
                                         </span>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -431,15 +428,15 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>Response</h4>
-                                    <p>URL: https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees?models=detailed&offset=0&sortOrder=ASC&limit=50&sortField=employee.firstName&includeEmployees=onlyCurrent</p>
+                                    <p>URL: https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/pim/employees?offset=0&sortOrder=ASC&sortField=employee.firstName&model=detailed&includeEmployees=onlyCurrent&limitd=50</p>
                                     <p>Status code: 422</p>
                                     <p>Content Type: application/json</p>
                                     <h4>Request Headers</h4>
-                                    <pre>Authorization=Bearer def5020097d544742a22d3219094545082085d1ac86b7355d5332ace5c40bb2812d980e9e2e79ce6b54643f227c65d9f43cf515f3df6fa134bfe9f462e85733f192ede8d1d9069f5bb72ab3fe89e13867c7103a5aef10ccdc66663bb7bb91b18100aebd0123822f5cd02c0b61ec9dee0c786821eef7ceba3d7968b2d2a7ff2780e996c107f509738db51aeb56389cfdc4153a771d8ea7c6e236d49e9c8a930941cc16a85<br>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <pre>Authorization=Bearer def50200ba210c22d93a54b638d34a9ff6120aeb4cef7b7bafd11a01ea78c29a4cc5ac1babbc132d87e5cede224fcade2bbe0ba0bf454a970d16f4df35f5ab92672e6220601dbc7e3ed31cb6ea899ba45d07d02e31abe833cdecb7b0d6f8924b6a37abc631f1f7fc811dae9540a86924a3cca19595906ab36087f3e97a7a21b482552e5832b7e8f9dbdfa36bb6fda5d74d30e52928e2723cd837fceb60024f53c33b1391<br>Accept=*/*<br>Content-Type=application/json</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Server: nginx<br>Date: Mon, 06 Oct 2025 03:59:09 GMT<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: no-cache, private<br>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Strict-Transport-Security: max-age=31536000; includeSubdomains;</pre>
+                                    <pre>Server: nginx<br>Date: Mon, 06 Oct 2025 04:45:04 GMT<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: no-cache, private<br>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Strict-Transport-Security: max-age=31536000; includeSubdomains;</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;error&quot;: {<br>        &quot;status&quot;: &quot;422&quot;,<br>        &quot;message&quot;: &quot;Invalid Parameter&quot;,<br>        &quot;data&quot;: {<br>            &quot;invalidParamKeys&quot;: [<br>                &quot;models&quot;<br>            ]<br>        }<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;error&quot;: {<br>        &quot;status&quot;: &quot;422&quot;,<br>        &quot;message&quot;: &quot;Invalid Parameter&quot;,<br>        &quot;data&quot;: {<br>            &quot;invalidParamKeys&quot;: [<br>                &quot;limitd&quot;<br>            ]<br>        }<br>    }<br>}</pre>
                                     <h4>Response Cookies</h4>
                                     <pre></pre>
                             </div>
@@ -512,7 +509,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
 
                             </table>
@@ -534,7 +531,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                Then Validate Json error model
+                                                Then Validate Json error limit
                                         </span>
                             </a>
                             <span class="evidence">
@@ -560,7 +557,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Then The item 'error' matches exactly should be ({status=422, message=Invalid Parameter, data={invalidParamKeys=[models]}})
+                                                Then The item 'error' matches exactly should be ({status=422, message=Invalid Parameter, data={invalidParamKeys=[limitd]}})
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -634,7 +631,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -656,7 +653,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">003ms</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -670,7 +667,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Then The item 'data' matches exactly should be ({invalidParamKeys=[models]})
+                                                Then The item 'data' matches exactly should be ({invalidParamKeys=[limitd]})
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -678,7 +675,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">003ms</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -692,7 +689,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Then The item 'invalidParamKeys' matches exactly should be ([models])
+                                                Then The item 'invalidParamKeys' matches exactly should be ([limitd])
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -736,7 +733,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Then List item [0] matches should be 'models'
+                                                Then List item [0] matches should be 'limitd'
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -744,7 +741,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">003ms</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
                 </tr>
 
                             </table>
@@ -753,7 +750,7 @@
             <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                 <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>0.01s</em></span></td>
+                <td width="100"><span class="top-level-step"><em>0.02s</em></span></td>
             </tr>
 
         </table>

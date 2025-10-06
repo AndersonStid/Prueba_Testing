@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Generate token" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-06T03:59:03" hostname="ANDERSON" time="0.397">
+<testsuite name="Generate token" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-06T04:44:59" hostname="ANDERSON" time="0.401">
   <properties/>
-  <testcase name="Generate Token" classname="Generate token" time="0.397"/>
+  <testcase name="Generate Token" classname="Generate token" time="0.401"/>
   <system-out><![CDATA[https://opensource-demo.orangehrmlive.com
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO  - 
