@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "empNumber": 128,
+      "lastName": "444444",
+      "firstName": "123445",
+      "middleName": "34",
+      "employeeId": "dfgsjsjdh",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": [
+
+      ]
+    },
+    {
+      "empNumber": 86,
+      "lastName": "5TlV",
+      "firstName": "99N75",
+      "middleName": "425",
+      "employeeId": "0295",
+      "terminationId": null,
+      "jobTitle": {
+        "id": null,
+        "title": null,
+        "isDeleted": null
+      },
+      "subunit": {
+        "id": null,
+        "name": null
+      },
+      "empStatus": {
+        "id": null,
+        "name": null
+      },
+      "supervisors": [
+
+      ]
+    }
+  ],
+  "meta": {
+    "total": 157
+  },
+  "rels": [
+
+  ]
+}

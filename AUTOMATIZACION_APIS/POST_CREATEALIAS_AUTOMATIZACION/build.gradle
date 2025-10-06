@@ -1,0 +1,48 @@
+plugins {
+    id "net.serenity-bdd.serenity-gradle-plugin" version "4.0.46"
+    id 'java'
+    id 'jvm-test-suite'
+    id 'eclipse'
+    id 'idea'
+}
+
+defaultTasks 'clean', 'test', 'aggregate'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        def var = languageVersion = JavaLanguageVersion.of(21)
+        var
+    }
+}
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
+    implementation 'net.serenity-bdd:serenity-core:4.1.10'
+    implementation 'net.serenity-bdd:serenity-junit:4.1.10'
+    implementation 'org.assertj:assertj-core:3.25.3'
+    implementation 'net.serenity-bdd:serenity-cucumber:4.1.10'
+    implementation 'net.serenity-bdd:serenity-screenplay:4.1.10'
+    //Si es un proyecto de APIs, usamos serenity rest
+    implementation 'net.serenity-bdd:serenity-screenplay-rest:4.1.10'
+    implementation 'org.slf4j:slf4j-simple:2.0.13'
+    implementation group: 'com.github.jknack', name: 'handlebars', version: '4.3.0'
+
+    implementation group: 'org.json', name: 'json', version: '20230227'
+
+}
+gradle.startParameter.continueOnFailure = true
+
+test {
+    systemProperties System.getProperties()
+    doFirst {
+        delete 'target'
+    }
+    finalizedBy 'aggregate'
+}

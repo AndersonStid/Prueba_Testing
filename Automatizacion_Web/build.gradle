@@ -1,0 +1,84 @@
+plugins {
+    id "net.serenity-bdd.serenity-gradle-plugin" version "4.0.46" // mantener este
+    id 'java'
+    id 'jvm-test-suite'
+    id 'eclipse'
+    id 'idea'
+}
+
+defaultTasks 'clean', 'test', 'aggregate'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+ext {
+    serenityVersion = '4.1.10'
+}
+
+//sonarqube {
+//    properties {
+//        property "sonar.projectKey", "EPX"
+//        property "sonar.projectName", "EPX Web Automation Tests"
+//        property "sonar.host.url", "http://localhost:9000"
+//        property "sonar.sources", "src/main"
+//        property "sonar.tests", "src/test"
+//        property "sonar.sourceEncoding", "UTF-8"
+//        property "sonar.token", "sqa_b280c9919598f8de6fc75afd805c0dec396dcddb"
+//    }
+//}
+
+
+
+dependencies {
+    //  SERENITY CORE (TODAS LA MISMA VERSIÓN)
+    implementation "net.serenity-bdd:serenity-core:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-junit:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-cucumber:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityVersion}"
+
+    implementation 'org.assertj:assertj-core:3.25.3'
+    implementation 'org.slf4j:slf4j-simple:2.0.13'
+}
+
+test {
+    systemProperties System.getProperties()
+
+    doFirst {
+        delete 'target'
+    }
+
+    finalizedBy 'aggregate'
+
+    testLogging {
+        events = ['passed', 'skipped', 'failed']
+        showStandardStreams = true
+    }
+
+    ignoreFailures = true
+    outputs.upToDateWhen { false }
+
+    minHeapSize = "512m"
+    maxHeapSize = "1024m"
+    jvmArgs = [
+            "-Xms512m",
+            "-Xmx1024m",
+            "-XX:MaxMetaspaceSize=512m",
+            "-Dfile.encoding=UTF-8"
+    ]
+}
+
+gradle.startParameter.continueOnFailure = true
+
+//test.finalizedBy(aggregate, "sonarqube")

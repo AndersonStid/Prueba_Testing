@@ -1,0 +1,53 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  SONAR_TOKEN: $(SONAR_TOKEN)
+  SONAR_HOST_URL: 'http://localhost:9000'
+
+steps:
+  - task: Gradle@3
+    inputs:
+      gradleWrapperFile: 'gradlew'
+      tasks: 'clean test aggregate'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.21'
+      jdkArchitectureOption: 'x64'
+
+  - task: SonarQubePrepare@5
+    inputs:
+      SonarQube: 'SonarQubeServiceConnection'
+      scannerMode: 'Other'
+      configMode: 'manual'
+      projectKey: 'EPX'
+      projectName: 'EPX Web Automation Tests'
+      extraProperties: |
+        sonar.sources=src/main
+        sonar.tests=src/test
+        sonar.sourceEncoding=UTF-8
+        sonar.token=$(SONAR_TOKEN)
+
+  - task: Gradle@3
+    inputs:
+      gradleWrapperFile: 'gradlew'
+      tasks: 'sonar'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.21'
+      jdkArchitectureOption: 'x64'
+
+  - task: SonarQubePublish@5
+    inputs:
+      pollingTimeoutSec: '300'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: 'target/site/serenity'
+      artifactName: 'SerenityReport'
+      publishLocation: 'Container'
