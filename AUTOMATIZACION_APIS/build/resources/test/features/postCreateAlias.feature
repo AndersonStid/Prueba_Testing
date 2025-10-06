@@ -1,9 +1,9 @@
 Feature: Validate create alias
 
-  Scenario: Validate employeesS
+  Scenario: Validate employees
     When Load customer information
       | Authorization | limit | offset | model    | includeEmployees | sortField          | sortOrder |
-      | Authorization | 50     | 0      | detailed | onlyCurrent      | employee.firstName | ASC       |
+      | Authorization | 4     | 0      | detailed | onlyCurrent      | employee.firstName | ASC       |
     When Load templates
     And Api response code 200
     Then Validate Json
