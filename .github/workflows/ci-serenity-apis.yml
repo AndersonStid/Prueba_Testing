@@ -10,12 +10,21 @@ jobs:
   build-and-test-apis:
     runs-on: ubuntu-latest
 
+    # 🔹 Variables de entorno globales (para todo el job)
+    env:
+      BASE_URL: https://opensource-demo.orangehrmlive.com/web/index.php
+      URL: /api/v2/pim/employees
+      URL_TOKEN: https://opensource-demo.orangehrmlive.com
+      URL_TOKENS: /web/index.php/auth/validate
+      USERNAME: Admin
+      PASSWORD: admin123
+
     steps:
       # 1️⃣ Descargar el repositorio
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Configurar Java (usa la versión definida en tu proyecto)
+      # 2️⃣ Configurar Java
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
@@ -28,31 +37,31 @@ jobs:
         run: chmod +x gradlew
         working-directory: AUTOMATIZACION_APIS
 
-      # 4️⃣ Compilar el proyecto (sin ejecutar pruebas aún)
+      # 4️⃣ Compilar el proyecto
       - name: Build API Automation Project
         run: ./gradlew clean build -x test
         working-directory: AUTOMATIZACION_APIS
-      
-      # 5️⃣ Mirar un error
-      - name: list test resource
+
+      # 5️⃣ Verificar recursos
+      - name: List test resources
         run: ls -R src/test/resources
         working-directory: AUTOMATIZACION_APIS
 
-      # 5️⃣ Ejecutar las pruebas de API automatizadas
+      # 6️⃣ Ejecutar las pruebas Serenity con variables de entorno
       - name: Run Serenity API Tests
-        run: ./gradlew test aggregate
+        run: |
+          ./gradlew test aggregate \
+            -Dbase_url=${{ env.BASE_URL }} \
+            -Durl=${{ env.URL }} \
+            -Durl_token=${{ env.URL_TOKEN }} \
+            -Durl_tokens=${{ env.URL_TOKENS }} \
+            -Dusername=${{ env.USERNAME }} \
+            -Dpassword=${{ env.PASSWORD }}
         working-directory: AUTOMATIZACION_APIS
 
-      # 6️⃣ Subir el reporte Serenity como artefacto descargable
+      # 7️⃣ Subir reporte Serenity
       - name: Upload Serenity API Reports
         uses: actions/upload-artifact@v4
         with:
           name: serenity-api-report
           path: AUTOMATIZACION_APIS/target/site/serenity/
-
-      # (Opcional) 7️⃣ Publicar reporte en GitHub Pages (requiere permisos)
-      # - name: Deploy Serenity API Report to GitHub Pages
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: AUTOMATIZACION_APIS/target/site/serenity
