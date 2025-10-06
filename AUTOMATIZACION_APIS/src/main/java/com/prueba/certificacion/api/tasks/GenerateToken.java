@@ -23,8 +23,9 @@ public class GenerateToken implements Task, IsHidden {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        clientData.put("username",System.getProperty("username"));
-        clientData.put("password",System.getProperty("password"));
+        clientData.put("username", "Admin");
+        clientData.put("password", "admin123");
+
         String body = mergeWithTemplates(template, bodyName, clientData);
 
         System.setProperty("access_token",
