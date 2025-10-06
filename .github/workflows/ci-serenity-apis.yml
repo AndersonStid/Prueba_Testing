@@ -12,12 +12,12 @@ jobs:
 
     # 🔹 Variables de entorno globales (para todo el job)
     env:
-      BASE_URL: https://opensource-demo.orangehrmlive.com/web/index.php
-      URL: /api/v2/pim/employees
-      URL_TOKEN: https://opensource-demo.orangehrmlive.com
-      URL_TOKENS: /web/index.php/auth/validate
-      USERNAME: Admin
-      PASSWORD: admin123
+      base_url: https://opensource-demo.orangehrmlive.com/web/index.php
+      url: /api/v2/pim/employees
+      url_token: https://opensource-demo.orangehrmlive.com
+      url_tokens: /web/index.php/auth/validate
+      username: Admin
+      password: admin123
 
     steps:
       # 1️⃣ Descargar el repositorio
