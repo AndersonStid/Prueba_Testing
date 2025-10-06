@@ -1,66 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login tests" tests="2" skipped="0" failures="2" errors="0" timestamp="2025-10-06T00:21:43" hostname="ANDERSON" time="131.856">
+<testsuite name="Login tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-10-06T02:07:20" hostname="ANDERSON" time="281.325">
   <properties/>
-  <testcase name="validate Text" classname="Login tests" time="131.728">
-    <failure message="java.lang.AssertionError: no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=140.0.7339.210)&#10;Build info: version: '4.19.0', revision: '5f9cec8963'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [14939b82d7f3551b03e49e4e34931c4f, findElements {value=//*[@id=&quot;app&quot;]/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div/p, using=xpath}]&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 14939b82d7f3551b03e49e4e34931c4f" type="java.lang.AssertionError">java.lang.AssertionError: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=140.0.7339.210)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [14939b82d7f3551b03e49e4e34931c4f, findElements {value=//*[@id=&quot;app&quot;]/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div/p, using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14939b82d7f3551b03e49e4e34931c4f
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:397)
-	at com.prueba.certificacion.mispagos.stepdefinitions.LoginStepsDefinitions.ValidateTextError(LoginStepsDefinitions.java:43)
-	at ✽.Validate text Time at Work(file:///D:/Apis/Automatizacion_Web/src/test/resources/features/Login.feature:8)
-</failure>
-  </testcase>
-  <testcase name="Create employees" classname="Login tests" time="0.128">
-    <failure message="org.openqa.selenium.NoSuchWindowException: no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=140.0.7339.210)&#10;Build info: version: '4.19.0', revision: '5f9cec8963'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [14939b82d7f3551b03e49e4e34931c4f, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 14939b82d7f3551b03e49e4e34931c4f" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=140.0.7339.210)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [14939b82d7f3551b03e49e4e34931c4f, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14939b82d7f3551b03e49e4e34931c4f
-	at java.base@21.0.4/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base@21.0.4/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base@21.0.4/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at app//net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:221)
-	at app//net.serenitybdd.screenplay.actions.OpenPageWithName.performAs(OpenPageWithName.java:29)
-	at app//net.serenitybdd.screenplay.actions.OpenPageWithName$ByteBuddy$pKNcHo4o.performAs$accessor$qFuC4tdB(Unknown Source)
-	at java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
-	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
-	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
-	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
-	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
-	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
-	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
-	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at app//net.serenitybdd.screenplay.actions.OpenPageWithName$ByteBuddy$pKNcHo4o.performAs(Unknown Source)
-	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
-	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
-	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
-	at app//net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:193)
-	at app//com.prueba.certificacion.mispagos.stepdefinitions.LoginStepsDefinitions.SelectUrl(LoginStepsDefinitions.java:35)
-	at ✽.Select URL(file:///D:/Apis/Automatizacion_Web/src/test/resources/features/Login.feature:4)
-</failure>
-  </testcase>
+  <testcase name="validate Text" classname="Login tests" time="100.735"/>
+  <testcase name="Create employees" classname="Login tests" time="180.589"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -75,59 +17,23 @@ validate Text(login-tests;validate-text)
 [Test worker] INFO  - |------ User opens the pages.urlMisPagos page
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [test-type, ignore-certificate-errors, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, disable-dev-shm-usage, disable-extensions, disable-web-security, disable-translate, disable-logging, disable-download-notification, start-maximized, allow-running-insecure-content, test-type, ignore-certificate-errors, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, disable-dev-shm-usage, disable-extensions, disable-web-security, disable-translate, disable-logging, disable-download-notification, start-maximized, allow-running-insecure-content, remote-allow-origins=*], extensions: []}, timeouts: {implicit: 10000, pageLoad: 50000}, unhandledPromptBehavior: accept}
-oct 05, 2025 7:21:45 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+oct 05, 2025 9:07:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 140
-oct 05, 2025 7:21:45 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+oct 05, 2025 9:07:22 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 140.0.7339.210. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [Test worker] INFO  - |---- When Select add two Courses Admin and admin123
 [Test worker] INFO  - |---- Then Validate text Time at Work
 [Test worker] INFO  - |------ Then login validate text should be Predicates.equalTo(Time at Work)
-[Test worker] INFO  - STEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=140.0.7339.210)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [14939b82d7f3551b03e49e4e34931c4f, findElements {value=//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div/p, using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14939b82d7f3551b03e49e4e34931c4f
-[Test worker] INFO  - STEP FAILURE: java.lang.AssertionError: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=140.0.7339.210)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [14939b82d7f3551b03e49e4e34931c4f, findElements {value=//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div/p, using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14939b82d7f3551b03e49e4e34931c4f
-[Test worker] INFO  - STEP FAILURE: java.lang.AssertionError: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=140.0.7339.210)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [14939b82d7f3551b03e49e4e34931c4f, findElements {value=//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div/p, using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14939b82d7f3551b03e49e4e34931c4f
-[Test worker] INFO  - STEP FAILURE: java.lang.AssertionError: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=140.0.7339.210)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [14939b82d7f3551b03e49e4e34931c4f, findElements {value=//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div/p, using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14939b82d7f3551b03e49e4e34931c4f
-[Test worker] ERROR  - 
-  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
- |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
-   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
-   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+oct 05, 2025 9:09:01 P. M. com.prueba.certificacion.mispagos.questions.LoginValidateText answeredBy
+INFORMACIÓN: The text found in the locator is: Time at Work
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 validate Text
----------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: Then login validate text should be Predicates.equalTo(Time at Work)
-[Test worker] ERROR  -     no such window: target window already closed
+----------------------------------------------------------------------
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
@@ -136,43 +42,27 @@ validate Text
 
 Create employees(login-tests;create-employees)
 --------------------------------------------------------------------------------
-[Test worker] INFO  - |-------- 1: Create employees ({seleccionarArchivo=dino.jpg, firstName=Anderson, middleName=tester, lastName=Narajos, EmployeeId=02020, Employeed=Anderson Narajos})
-[Test worker] INFO  - |---------- Given Select URL
-[Test worker] INFO  - |------------ User opens the pages.urlMisPagos page
-[Test worker] INFO  - STEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=140.0.7339.210)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [14939b82d7f3551b03e49e4e34931c4f, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14939b82d7f3551b03e49e4e34931c4f
-[Test worker] INFO  - |-------------- When Create employees
-[Test worker] INFO  -       -> STEP IGNORED
-[Test worker] INFO  - |-------------- And Se selecciona archivo seleccionarArchivo dino.jpg
-[Test worker] INFO  -       -> STEP IGNORED
-[Test worker] INFO  - STEP ERROR: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=140.0.7339.210)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [14939b82d7f3551b03e49e4e34931c4f, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 140.0.7339.210, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Waswa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 140.0.7339.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 10000, pageLoad: 50000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14939b82d7f3551b03e49e4e34931c4f
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: driver.version: unknown
-[Test worker] ERROR  - 
-  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
- |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
-   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
-   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+[Test worker] INFO  - |-- 1: Create employees ({seleccionarArchivo=dino.jpg, firstName=Anderson, middleName=tester, lastName=Narajos, EmployeeId=02020, Employeed=Anderson Narajos})
+[Test worker] INFO  - |---- Given Select URL
+[Test worker] INFO  - |------ User opens the pages.urlMisPagos page
+[Test worker] INFO  - |---- When Create employees
+[Test worker] INFO  - |------ User employees
+[Test worker] INFO  - |-------- User clicks on Compare text
+[Test worker] INFO  - |-------- User clicks on Compare text
+[Test worker] INFO  - |---- And Se selecciona archivo seleccionarArchivo dino.jpg
+[Test worker] INFO  - |------ User seleccionar archivo task
+[Test worker] INFO  - |---- And llenar formulario Anderson y tester y Narajos y 02020
+[Test worker] INFO  - |---- Then Validate Employeed Anderson Narajos
+[Test worker] INFO  - |------ Then login validate text should be Predicates.equalTo(Anderson Narajos)
+oct 05, 2025 9:12:01 P. M. com.prueba.certificacion.mispagos.questions.LoginValidateText answeredBy
+INFORMACIÓN: The text found in the locator is: Anderson Narajos
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 Create employees
----------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: User opens the pages.urlMisPagos page
-[Test worker] ERROR  -     no such window: target window already closed
+----------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

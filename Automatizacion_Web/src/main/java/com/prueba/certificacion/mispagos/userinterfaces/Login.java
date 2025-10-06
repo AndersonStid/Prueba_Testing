@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 
 public class Login {
     public static final Target TXT_USER = Target.the("Text field User").
-            located(By.xpath("//input[@name='username']"));
+            located(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"));
     public static final Target TXT_PASSWAORD = Target.the("Text field User").
-            located(By.xpath("//input[@name='password']"));
+            located(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"));
     public static final Target BTN_GET_INTO = Target.the("Enter button").
             located(By.xpath("//button[@type='submit']"));
     public static final Target TEXT_VALIDATE = Target.the("Compare text").

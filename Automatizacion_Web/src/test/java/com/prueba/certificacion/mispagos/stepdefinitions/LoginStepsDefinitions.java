@@ -36,6 +36,7 @@ public class LoginStepsDefinitions {
     }
     @When("^Select add two Courses (.*) and (.*)$")
     public void LoginCredentialsError(String User, String Password) {
+        theActorInTheSpotlight().attemptsTo(EsperaExplicitaInteraction.porSegundos(40));
         theActorInTheSpotlight().attemptsTo(LoginCredentials.write(User, Password));
     }
     @Then("^Validate text (.*)$")
